@@ -1,5 +1,5 @@
 {
-  "title": "\"!important\" should not be used on \"keyframes\"",
+  "title": "\"优先权（!important）\" 不应该被用于 \"关键帧动画（keyframes）\"",
   "type": "BUG",
   "status": "ready",
   "remediation": {

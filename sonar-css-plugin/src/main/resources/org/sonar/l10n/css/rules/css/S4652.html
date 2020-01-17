@@ -1,25 +1,23 @@
-<p>According to the W3C specifications:</p>
+<p>根据W3C规范：</p>
 <blockquote>
-  <p>A string cannot directly contain a newline. To include a newline in a string, use an escape representing the line feed character in ISO-10646
-  (U+000A), such as "\A" or "\00000a".</p>
+  <p>字符串不能直接包含新行。要在字符串中包含换行符，请使用在ISO-10646(U+000A)中代表换行符的换码符，如"\A" 或者 "\00000a"。</p>
   <p>[...]</p>
-  <p>It is possible to break strings over several lines, for aesthetic or other reasons, but in such a case the newline itself has to be escaped with
-  a backslash (\).</p>
+  <p>出于美观或其他原因，可以将字符串分成几行，但在这种情况下，换行符本身必须使用反斜杠（\）进行换行。</p>
 </blockquote>
-<h2>Noncompliant Code Example</h2>
+<h2>不合规的代码示例</h2>
 <pre>
 a {
   content: "first
     second";
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 a {
   content: "first\Asecond";
 }
 </pre>
-<h2>See</h2>
+<h2>请参阅</h2>
 <ul>
   <li> <a href="https://www.w3.org/TR/CSS2/syndata.html#strings">CSS Specification</a> - Strings </li>
 </ul>

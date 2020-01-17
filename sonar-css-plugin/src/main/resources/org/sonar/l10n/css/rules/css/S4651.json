@@ -1,5 +1,5 @@
 {
-  "title": "\"linear-gradient\" directions should be valid",
+  "title": "\"线性渐变（linear-gradient）\" 方向应该有效",
   "type": "BUG",
   "status": "ready",
   "remediation": {

@@ -1,13 +1,12 @@
-<p>Having the import of the same file twice, makes one of them useless. Leaving them in reduces the code's readability, since their presence can be
-confusing.</p>
-<h2>Noncompliant Code Example</h2>
+<p>两次导入相同的文件，会使其中一个无效。保留他们会降低代码的可读性，因为他们的存在可能会令人困惑。</p>
+<h2>不合规的代码示例</h2>
 <pre>
 @import 'a.css';
-@import 'a.css'; // Noncompliant
+@import 'a.css'; // 不合规的
 
 @import url("a.css");
-@import url("a.css"); // Noncompliant
+@import url("a.css"); // 不合规的
 </pre>
-<h2>Exceptions</h2>
-<p>This rule ignores <code>@import</code> in <code>less</code> files.</p>
+<h2>例外</h2>
+<p>此规则忽略 <code>@import</code> 在 <code>less</code> 文件中。</p>
 

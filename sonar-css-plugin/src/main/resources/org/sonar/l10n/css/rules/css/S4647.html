@@ -1,19 +1,17 @@
-<p>An invalid color definition will by default be interpreted as black, which is likely to have unintended impacts on the expected look and feel of
-the website.</p>
-<p>This rule raises an issue when a color definition (<code>color</code>, <code>background-color</code>) is not valid. The color definition is
-considered valid when it is made of hexadecimal characters:</p>
-<p>- longhand: 6 or 8 characters (when alpha is defined)</p>
-<p>- shorthand variant: 3 or 4 characters (when alpha is defined)</p>
-<h2>Noncompliant Code Example</h2>
+<p>一个无效的颜色定义将被默认理解为黑色，这可能会对网站的预期外观和感觉产生意想不到的影响。</p>
+<p>当颜色定义(<code>color</code>, <code>background-color</code>) 是无效的时，此规则会引发一个问题。 当颜色定义是由十六进制字符组成时，它被认为是有效的：</p>
+<p>- 普通属性（longhand）：6或8个字符（定义不透明度时）</p>
+<p>- 简写属性变型（shorthand variant）: 3或4个字符（定义不透明度时）</p>
+<h2>不合规的代码示例</h2>
 <pre>
 a {
- color: #3c; /* Noncompliant; shorthand should be made of 3 characters */
+ color: #3c; /* 不合规的；简写属性应该由3个字符构成 */
 }
 div {
-  background-color: #3cb371a; /* Noncompliant; alpha should have 2 characters */
+  background-color: #3cb371a; /* 不合规的；不透明度定义（alpha）应该包含2个字符 */
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 a {
  color: #3cc;
@@ -22,7 +20,7 @@ div {
   background-color: #3cb371ac;
 }
 </pre>
-<h2>See</h2>
+<h2>请参阅</h2>
 <ul>
   <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">Mozilla Web Technology for Developers</a> - CSS Color </li>
 </ul>

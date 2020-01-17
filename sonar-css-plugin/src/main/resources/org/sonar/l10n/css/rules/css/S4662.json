@@ -1,5 +1,5 @@
 {
-  "title": "\"at-rules\" should be valid",
+  "title": "\"样式声明（at-rules）\" 应该有效",
   "type": "BUG",
   "status": "ready",
   "remediation": {

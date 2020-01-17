@@ -1,8 +1,8 @@
-<p>Order of instructions in CSS is important: instructions with equal specificity that occur later in the file take the priority. But when a selector
-with a higher specificity (e.g. <code>p a { color: green;}</code>) comes before the selector it overrides (e.g.: <code>a { color: green;}</code>), the
-priority is given to the first one. Even if it works properly, this is harder to anticipate the behaviour of the stylesheet while reading as it goes
-against the principle that the last instruction takes the priority.</p>
-<h2>Noncompliant Code Example</h2>
+<p>在CSS中命令的顺序很重要：在文件中，具有同等特异性的指令，后出现的优先。但是当一个具有更高特异性的选择器
+(例如<code>p a {color: green;}</code>)出现在它能覆盖的选择器(例如:<code>a {color: green;}</code>)之前时，优先级被给
+予给第一个高特异性的选择器。即使这样能正常工作，但在读取样式表时也很难预计它的运行状况，因为这样违背了最后一条指令优先的原则。
+</p>
+<h2>不合规的代码示例</h2>
 <pre>
 p a {
   color: green;
@@ -12,7 +12,7 @@ a {
   color: blue;
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 a {
   color: blue;

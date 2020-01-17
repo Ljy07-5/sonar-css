@@ -1,5 +1,5 @@
 {
-  "title": "Strings should not contain new lines",
+  "title": "字符串不应该包含换行符",
   "type": "CODE_SMELL",
   "status": "ready",
   "remediation": {

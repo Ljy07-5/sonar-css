@@ -1,14 +1,13 @@
-<p>The W3C specifications define the valid media features. Only the official and browser-specific media features should be used to get the expected
-impact in the final rendering.</p>
-<h2>Noncompliant Code Example</h2>
+<p>W3C规范定义了有效的媒体特性（Media features）。只有使用官方的和浏览器特定的媒体特性（Media features）才能在最终呈现中获得预期的效果</p>
+<h2>不合规的代码示例</h2>
 <pre>
 @media screen and (unknown: 1000px) { .. }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 @media screen and (width: 1000px) { .. }
 </pre>
-<h2>See</h2>
+<h2>请参阅</h2>
 <ul>
   <li> <a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp">CSS Specification</a> - <code>@media</code> rule </li>
 </ul>

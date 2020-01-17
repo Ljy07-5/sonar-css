@@ -1,16 +1,16 @@
-<p>Duplication of selectors might indicate a copy-paste mistake. The rule detects the following kinds of duplications:</p>
+<p>选择器的重复可能表明复制粘贴错误。此规则检测到以下几种重复：</p>
 <ul>
-  <li> within a list of selectors in a single rule set </li>
-  <li> for duplicated selectors in different rule sets within a single stylesheet. </li>
+  <li> 在单个规则集的选择器列表里。 </li>
+  <li> 用于单个样式表中不同规则集中的重复选择器。 </li>
 </ul>
-<h2>Noncompliant Code Example</h2>
+<h2>不合规的代码示例</h2>
 <pre>
-.foo, .bar, .foo { ... }  /* Noncompliant */
+.foo, .bar, .foo { ... }  /* 不合规的 */
 
 .class1 { ... }
-.class1 { ... }  /* Noncompliant */
+.class1 { ... }  /* 不合规的 */
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 .foo, .bar { ... }
 

@@ -1,5 +1,5 @@
 {
-  "title": "Properties should not be duplicated",
+  "title": "属性不应该重复",
   "type": "BUG",
   "status": "ready",
   "remediation": {

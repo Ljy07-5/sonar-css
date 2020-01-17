@@ -1,12 +1,10 @@
-<p><code>linear-gradient</code> was standardized with CSS3. Before that, it was possible to use different non-standard values to define the gradient's
-direction. Because these values are not standard, they are not supported in all browsers and therefore they should no longer be used in order to get
-the expected gradient in the latest browser versions that support CSS3.</p>
-<p>This rule raises an issue when the first parameter of a <code>linear-gradient</code> is not a valid <code>&lt;side-or-corner&gt;</code> or
-<code>angle</code>.</p>
-<h2>Noncompliant Code Example</h2>
+<p>使用CSS3标准化<code>linear-gradient</code> 。在此之前，可以使用不同的非标准语法来定义渐变的方向。 因为这些语
+法不是标准的，所以不是所有的浏览器都支持它们，因此它们不该再被使用，以便在支持CSS3的最新版本浏览器中获得预计的渐变效果。</p>
+<p>当 <code>linear-gradient</code> 的第一个参数不是有效的 <code>&lt;side-or-corner&gt;</code> 或者
+<code>angle</code> 时，这个规则就会产生一个问题。</p>
+<h2>不合规的代码示例</h2>
 <pre>
 .foo {
-  background: -webkit-linear-gradient(to top, #fff, #000);
   background: linear-gradient(top, #fff, #000);
 }
 
@@ -14,10 +12,9 @@ the expected gradient in the latest browser versions that support CSS3.</p>
   background: linear-gradient(45, #fff, #000);
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 .foo {
-  background: -webkit-linear-gradient(top, #fff, #000);
   background: linear-gradient(to top, #fff, #000);
 }
 
@@ -25,7 +22,7 @@ the expected gradient in the latest browser versions that support CSS3.</p>
   background: linear-gradient(45deg, #fff, #000);
 }
 </pre>
-<h2>See</h2>
+<h2>请参阅</h2>
 <ul>
   <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient">Mozilla Web Technology for Developers</a> -
   <code>linear-gradient</code> </li>

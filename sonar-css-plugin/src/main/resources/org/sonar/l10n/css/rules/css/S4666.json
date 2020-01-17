@@ -1,5 +1,5 @@
 {
-  "title": "Selectors should not be duplicated",
+  "title": "选择器（Selectors）不应该重复",
   "type": "CODE_SMELL",
   "status": "ready",
   "remediation": {

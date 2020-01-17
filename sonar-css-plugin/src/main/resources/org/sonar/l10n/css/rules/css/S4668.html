@@ -1,15 +1,14 @@
-<p>The W3C specifications say comments should be defined using <code>/* ... */</code>. The use of <code>//</code> is not supported on all browsers and
-can lead to unexpected results.</p>
-<h2>Noncompliant Code Example</h2>
+<p>W3C规范要求应该使用 <code>/* ... */</code>代码。 并非所有浏览器都支持使用 <code>//</code> ，使用它可能会导致意想不到的结果。</p>
+<h2>不合规的代码示例</h2>
 <pre>
 // some comment
 a { color: pink; }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 /* some comment */
 a { color: pink; }
 </pre>
-<h2>Exceptions</h2>
-<p>This rule ignores single line comments in <code>less</code> and <code>scss</code> files.</p>
+<h2>例外</h2>
+<p>此规则忽略在 <code>less</code> 和 <code>scss</code> 文件中的单行注释。</p>
 

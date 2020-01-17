@@ -1,13 +1,13 @@
-<p>Having duplicated font names doesn't help to read the font declaration and may be an indicator the author of the line was not sure how to configure
-it. This rule raises an issue when <code>font</code> or <code>font-family</code> properties contain a duplicated font name. This rule ignores
-<code>$sass</code>, <code>@less</code>, and <code>var(--custom-property)</code> variable syntaxes.</p>
-<h2>Noncompliant Code Example</h2>
+<p>出现重复的字体名称不能帮助读取字体声明，并且可能表明该行的作者不确定如何配置字体声明。
+当 <code>font</code> 或 <code>font-family</code> 属性包含重复的字体名称时，此规则会引发一个问题。
+此规则忽略 <code>$sass</code>， <code>@less</code>， <code>var(——custom-property)</code> 变量语法。</p>
+<h2>不合规的代码示例</h2>
 <pre>
 a {
-  font-family: 'Georgia', Georgia, serif; /* Noncompliant; 'Georgia' is duplicated */
+  font-family: 'Georgia', Georgia, serif; /* 不合规的；‘Georgia’是重复的 */
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 a {
   font-family: Georgia, serif;

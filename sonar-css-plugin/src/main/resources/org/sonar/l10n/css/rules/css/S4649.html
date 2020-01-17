@@ -1,21 +1,20 @@
-<p>If none of the font names defined in a <code>font</code> or <code>font-family</code> declaration are available on the browser of the user, the
-browser will display the text using its default font. It's recommended to always define a generic font family for each declaration of
-<code>font</code> or <code>font-family</code> to get a less degraded situation than relying on the default browser font. All browsers should implement
-a list of generic font matching these families: <code>Serif</code>, <code>Sans-serif</code>, <code>cursive</code>, <code>fantasy</code>,
+<p>如果用户的浏览器上没有 <code>font</code> 或 <code>font-family</code> 声明中已定义的字体名称，则浏览器将其使用默认字体显示文本。 
+建议始终为每个 <code>font</code> 或者 <code>font-family</code> 的声明定义一个通用字体系列名称，来得到比依赖浏览器默认字体更少的
+字体降级情况。 所有浏览器应该支持一个通用字体列表，即匹配以下字体族： <code>Serif</code>, <code>Sans-serif</code>, <code>cursive</code>, <code>fantasy</code>,
 <code>Monospace</code>.</p>
-<h2>Noncompliant Code Example</h2>
+<h2>不合规的代码示例</h2>
 <pre>
 a {
-  font-family: Helvetica, Arial, Verdana, Tahoma; /* Noncompliant; there is no generic font family in the list */
+  font-family: Helvetica, Arial, Verdana, Tahoma; /* 不合规的；列表中没有通用字体系列名称 */
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 a {
   font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 </pre>
-<h2>See</h2>
+<h2>请参阅</h2>
 <ul>
   <li> <a href="https://www.w3.org/TR/CSS2/fonts.html#generic-font-families">CSS Specification</a> - Generic font families </li>
 </ul>

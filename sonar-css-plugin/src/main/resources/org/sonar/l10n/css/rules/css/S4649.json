@@ -1,5 +1,5 @@
 {
-  "title": "Font declarations should contain at least one generic font family",
+  "title": "字体声明应该包含至少一个通用字体系列名称（font family）",
   "type": "BUG",
   "status": "ready",
   "remediation": {

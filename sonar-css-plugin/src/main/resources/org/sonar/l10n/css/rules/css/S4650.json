@@ -1,5 +1,5 @@
 {
-  "title": "\"calc\" operands should be correctly spaced",
+  "title": "\"计算（calc）\"” 运算应该正确间隔",
   "type": "BUG",
   "status": "ready",
   "remediation": {

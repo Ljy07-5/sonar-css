@@ -1,5 +1,5 @@
 {
-  "title": "Single line comment syntax should not be used",
+  "title": "不应该使用单行注释语法",
   "type": "BUG",
   "status": "ready",
   "remediation": {

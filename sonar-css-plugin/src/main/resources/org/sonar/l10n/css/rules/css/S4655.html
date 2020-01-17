@@ -1,14 +1,13 @@
-<p><code>!important</code> within keyframes declarations is completely ignored in some browsers and therefore it should not be used to be consistent
-among all browsers.</p>
-<h2>Noncompliant Code Example</h2>
+<p>关键帧（keyframes）声明中的<code>!important</code> 在某些浏览器中完全被忽略，因此不应该在所有浏览器中使用它。</p>
+<h2>不合规的代码示例</h2>
 <pre>
 @keyframes kf {
   from { margin-top: 50px; }
-  50%  { margin-top: 150px !important; } /* Noncompliant; ignored */
+  50%  { margin-top: 150px !important; } /* 不合规的；被忽略的 */
   to   { margin-top: 100px; }
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 @keyframes kf {
   from { margin-top: 50px; }
@@ -16,7 +15,7 @@ among all browsers.</p>
   to   { margin-top: 100px; }
 }
 </pre>
-<h2>See</h2>
+<h2>请参阅</h2>
 <ul>
   <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes#!important_in_a_keyframe">Mozilla Web Technology for Developers</a> -
   <code>!important</code> in a keyframe </li>

@@ -1,5 +1,5 @@
 {
-  "title": "Selectors of lower specificity should come before overriding selectors of higher specificity",
+  "title": "特异性较低的选择器应该在被特异性较高的选择器覆盖之前出现",
   "type": "CODE_SMELL",
   "status": "ready",
   "remediation": {

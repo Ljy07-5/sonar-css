@@ -1,15 +1,14 @@
-<p>The W3C specifications define the valid CSS properties. Only the official and browser-specific properties should be used to get the expected impact
-in the final rendering.</p>
-<p>This rule ignores:</p>
-<p>- <code>$sass</code>, <code>@less</code>, and <code>var(--custom-property)</code> variable syntaxes.</p>
-<p>- vendor-prefixed properties (e.g., <code>-moz-align-self</code>, <code>-webkit-align-self</code>).</p>
-<h2>Noncompliant Code Example</h2>
+<p>W3C规范定义了有效的CSS属性。只有使用官方的和浏览器特定的属性才能在最终呈现中获得预期的效果。</p>
+<p>此规则忽略：</p>
+<p>- <code>$sass</code>， <code>@less</code>， 和 <code>var(--custom-property)</code> 等变量语法。</p>
+<p>- 带前缀的属性 （比如， <code>-moz-align-self</code>, <code>-webkit-align-self</code>）。</p>
+<h2>不合规的代码示例</h2>
 <pre>
 a {
-  colour: blue; /* Noncompliant; colour is not part of the specifications */
+  colour: blue; /* 不合规的； colour 不是规范的一部分 */
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 a {
   color: blue;

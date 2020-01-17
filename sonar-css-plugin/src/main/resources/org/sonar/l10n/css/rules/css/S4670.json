@@ -1,5 +1,5 @@
 {
-  "title": "Selectors should be known",
+  "title": "选择器（Selectors）应该是已知的",
   "type": "BUG",
   "status": "ready",
   "remediation": {

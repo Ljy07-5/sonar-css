@@ -1,15 +1,14 @@
-<p><code>calc</code> is a CSS3 function that provides the possibility to do simple math in CSS (add, subtract, divide, multiply). Without spaces
-around operators, <code>calc</code> will have no effect.</p>
-<p>More precisely, before an operator, there must be a single whitespace or a newline plus indentation. After an operator, there must be a single
-whitespace or a newline.</p>
-<h2>Noncompliant Code Example</h2>
+<p><code>calc</code> 是一个CSS3函数，提供了在CSS中进行简单的数学运算（加， 减， 乘， 除）的可能性。 如果运算符周围
+没有空格， <code>calc</code> 将没有效果。</p>
+<p>更精确地说，在运算符之前，必须有一个空格或一个换行符增加缩进。在运算符之后，必须有一个空格或一个换行符。</p>
+<h2>不合规的代码示例</h2>
 <pre>
 #div1 {
     position: absolute;
-    width: calc(100%- 100px); /* Noncompliant; no space after the % sign */
+    width: calc(100%- 100px); /* 不合规的；在%标志后没有空格 */
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 #div1 {
     position: absolute;

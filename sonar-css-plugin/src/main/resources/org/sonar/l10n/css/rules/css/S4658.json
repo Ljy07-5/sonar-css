@@ -1,5 +1,5 @@
 {
-  "title": "Empty blocks should be removed",
+  "title": "空白块应该被删除",
   "type": "CODE_SMELL",
   "status": "ready",
   "remediation": {

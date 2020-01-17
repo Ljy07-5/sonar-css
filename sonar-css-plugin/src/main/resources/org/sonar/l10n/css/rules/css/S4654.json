@@ -1,5 +1,5 @@
 {
-  "title": "CSS properties should be valid",
+  "title": "CSS属性应该有效",
   "type": "BUG",
   "status": "ready",
   "remediation": {

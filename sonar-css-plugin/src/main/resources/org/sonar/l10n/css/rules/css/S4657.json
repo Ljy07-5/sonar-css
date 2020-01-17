@@ -1,5 +1,5 @@
 {
-  "title": "Shorthand properties that override related longhand properties should be avoided",
+  "title": "应该避免简写属性（shorthand properties）覆盖相关的普通属性（longhand properties）",
   "type": "BUG",
   "status": "ready",
   "remediation": {

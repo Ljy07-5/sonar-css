@@ -1,5 +1,5 @@
 {
-  "title": "Pseudo-element selectors should be valid",
+  "title": "伪元素选择器（Pseudo-element selectors）应该有效",
   "type": "BUG",
   "status": "ready",
   "remediation": {

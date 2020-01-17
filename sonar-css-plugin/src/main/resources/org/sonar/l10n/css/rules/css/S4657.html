@@ -1,20 +1,20 @@
-<p>A shorthand property defined after a longhand property will completely override the value defined in the longhand property making the longhand one
-useless. The code should be refactored to consider the longhand property or to remove it completely.</p>
-<h2>Noncompliant Code Example</h2>
+<p>在普通属性（longhand properties）之后定义的简写属性（shorthand properties）将完全覆盖普通属性（longhand properties）中定义的值，
+使得一个普通属性（longhand property）无效。应该重构代码以考虑普通属性（longhand properties），或者完全删除它。</p>
+<h2>不合规的代码示例</h2>
 <pre>
 a {
   padding-left: 10px;
-  padding: 20px; /* Noncompliant; padding is overriding padding-left making it useless */
+  padding: 20px; /* 不合规的；padding 会覆盖 padding-left，使其无效 */
 }
 </pre>
-<h2>Compliant Solution</h2>
+<h2>合规的解决方案</h2>
 <pre>
 a {
-  padding: 10px; /* Compliant; padding is defining a general behaviour and padding-left, just after, is precising the left case */
+  padding: 10px; /* 合规的；Compliant; padding 定义了一般填充运行状况，然后 padding-left，在这之后，精确地定义了左边的填充情况 */
   padding-left: 20px;
 }
 </pre>
-<h2>See</h2>
+<h2>请参阅</h2>
 <ul>
   <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">Mozilla Web Technology for Developers</a> - Shorthand
   properties </li>

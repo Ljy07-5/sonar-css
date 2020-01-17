@@ -1,5 +1,5 @@
 {
-  "title": "Duplicate imports should be removed",
+  "title": "重复导入应该被删除",
   "type": "CODE_SMELL",
   "status": "ready",
   "remediation": {

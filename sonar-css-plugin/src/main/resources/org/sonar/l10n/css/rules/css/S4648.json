@@ -1,5 +1,5 @@
 {
-  "title": "Duplicated font names should be removed",
+  "title": "重复的字体名称应该被删除",
   "type": "CODE_SMELL",
   "status": "ready",
   "remediation": {

@@ -1,5 +1,5 @@
 {
-  "title": "CSS files should not be empty",
+  "title": "层叠样式表（CSS）文件不能为空",
   "type": "CODE_SMELL",
   "status": "ready",
   "remediation": {
